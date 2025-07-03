@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aura Excellente</title>
+</head>
+<body>
+	<div class="">
+		<h1 style="color: #eca306;">Form</h1>
+		
+		<form  action="lodha-kothrud-Brochures.html" method="post">
+			<div class="form-group">
+				<label for="name">Name:-</label>
+				<input type="text" id="name" name="name">
+			</div>
+            <div class="form-group">
+				<label for="name">Number:-</label>
+				<input type="tel" id="number" name="number">
+			</div>
+			<div class="form-group">
+				<label for="email">Email:-</label>
+				<input type="email" id="email" name="email">
+			</div>
+			<div class="form-group">
+				<label for="file-type">File Type:-</label>
+				<select id="file-type" name="file-type">
+					<option value="pdf">PDF</option>
+					<option value="docx">DOCX</option>
+					<option value="excel">excel</option>
+				</select>
+			</div>
+			<button type="submit">Submit</button>
+
+		</form>
+	</div>
+
+
+<script>
+	document.getElementById("form").ad
+	dEventListener("Submit",function(event)
+{
+	event.preventDefault();
+	window.location.href="lodha-kothrud-Brochures.html";
+});
+</script>
+
+</body>
+</html>
+
+
+<style>
+    body {
+	font-family: Arial, sans-serif;
+	background-color: #f9f9f9;
+	max-width: 450px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #050505;
+	border: 1px solid #eca306;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #b87e021a;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	color: #fff;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+	width: 90%;
+	padding: 10px;
+	margin-bottom: 18px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+button[type="submit"] {
+	background-color: #eca306;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+
+</style>
